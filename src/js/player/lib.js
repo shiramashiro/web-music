@@ -10,8 +10,12 @@ let controlBtn = document.getElementById('control-btn')
 let nextBtn = document.getElementById('next-btn')
 let musicList = document.getElementById('music-list')
 let audio = document.getElementById('audio')
+let axis = document.getElementById('axis')
 let lyrics = document.getElementById('lyrics')
 let currentSurface = document.getElementById('current-surface')
+let startTime = document.getElementById('start-time')
+let endTime = document.getElementById('end-time')
+let processor = document.getElementById('processor')
 
 let musicIndex = 0
 let isPlaying = false

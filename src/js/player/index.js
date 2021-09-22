@@ -38,11 +38,22 @@ function controlMusic() {
         audio.pause()
         isPlaying = false
         rotateSurface(false)
-        controlBtn.src = 'https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/stopped.png'
+        changeIcon(false)
     } else {
         audio.play()
         isPlaying = true
         rotateSurface(true)
+        changeIcon(true)
+    }
+    setTimeout(() => {
+        endTime.innerText = formatTime(audio.duration)
+    }, 100)
+}
+
+function changeIcon(flag) {
+    if (!flag) {
+        controlBtn.src = 'https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/stopped.png'
+    } else {
         controlBtn.src = 'https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/playing.png'
     }
 }
@@ -53,11 +64,15 @@ function controlMusic() {
  * @author 郑人滏
  */
 function lastMusic() {
+    clearResource()
     musicIndex--
     if (musicIndex < 0) {
         musicIndex = musics.length - 1
     }
     loadResource(musicIndex)
+    setTimeout(() => {
+        endTime.innerText = formatTime(audio.duration)
+    }, 100)
 }
 
 /**
@@ -66,23 +81,50 @@ function lastMusic() {
  * @author 郑人滏
  */
 function nextMusic() {
+    clearResource()
     musicIndex++
     if (musicIndex > musics.length - 1) {
         musicIndex = 0
     }
     loadResource(musicIndex)
+    setTimeout(() => {
+        endTime.innerText = formatTime(audio.duration)
+    }, 100)
 }
 
-/* 为按钮添加事件 */
+/**
+ * 清楚资源
+ *
+ * @author 郑人滏
+ */
+function clearResource() {
+    axis.style.width = 0 + '%'
+    rotateSurface(false)
+}
 
-controlBtn.onclick = controlMusic
-lastBtn.onclick = lastMusic
-nextBtn.onclick = nextMusic
-
-/* */
+/**
+ * 格式化时间
+ *
+ * @author 郑人滏
+ */
+function formatTime(time) {
+    let arr = (time / 60).toFixed(2).split('.')
+    let result = ''
+    if (arr[1] > 60) {
+        let minute = parseInt(arr[0]) + 1
+        let seconds = parseInt(arr[1]) - 60
+        result = minute + ':' + seconds
+    } else {
+        result = arr[0] + ':' + arr[1]
+    }
+    return result
+}
 
 /* 初始化程序 */
 function init() {
+    setTimeout(() => {
+        endTime.innerText = formatTime(audio.duration)
+    }, 100)
     loadResource(0)
 }
 

@@ -73,7 +73,7 @@
 .rotate-surface {
     display: block !important;
     animation-name: rotate-surface-animation;
-    animation-duration: 3000ms;
+    animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
