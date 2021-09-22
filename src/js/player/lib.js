@@ -16,6 +16,3 @@ let currentSurface = document.getElementById('current-surface')
 let startTime = document.getElementById('start-time')
 let endTime = document.getElementById('end-time')
 let processor = document.getElementById('processor')
-
-let musicIndex = 0
-let isPlaying = false

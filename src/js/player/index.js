@@ -28,68 +28,12 @@ function rotateSurface(flag) {
     }
 }
 
-/**
- * 控制音乐是否播放
- *
- * @author 郑人滏
- */
-function controlMusic() {
-    if (isPlaying) {
-        audio.pause()
-        isPlaying = false
-        rotateSurface(false)
-        changeIcon(false)
-    } else {
-        audio.play()
-        isPlaying = true
-        rotateSurface(true)
-        changeIcon(true)
-    }
-    setTimeout(() => {
-        endTime.innerText = formatTime(audio.duration)
-    }, 100)
-}
-
 function changeIcon(flag) {
     if (!flag) {
         controlBtn.src = 'https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/stopped.png'
     } else {
         controlBtn.src = 'https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/playing.png'
     }
-}
-
-/**
- * 切换上一首歌
- *
- * @author 郑人滏
- */
-function lastMusic() {
-    clearResource()
-    musicIndex--
-    if (musicIndex < 0) {
-        musicIndex = musics.length - 1
-    }
-    loadResource(musicIndex)
-    setTimeout(() => {
-        endTime.innerText = formatTime(audio.duration)
-    }, 100)
-}
-
-/**
- * 切换下一首歌
- *
- * @author 郑人滏
- */
-function nextMusic() {
-    clearResource()
-    musicIndex++
-    if (musicIndex > musics.length - 1) {
-        musicIndex = 0
-    }
-    loadResource(musicIndex)
-    setTimeout(() => {
-        endTime.innerText = formatTime(audio.duration)
-    }, 100)
 }
 
 /**
