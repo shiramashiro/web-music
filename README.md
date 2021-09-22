@@ -12,6 +12,12 @@ JS、HTML、CSS：郑人滏、刘昱辰
 
 资源：王嘉睿
 
+## 主题颜色
+
+灰色：#f7f7f7
+黑色：#4a4a4a
+主色调：rgb(162, 210, 220) 或 #a2d2dc
+
 ## 分支说明
 
 main 为主分支，dev 分支开发完成之后合并到 main 分支。
@@ -35,7 +41,7 @@ gitee: https://gitee.com/shiramashiro/notfound404-music-app
  *  @author 程序员a
  */
 function example() {
-  // ...
+    // ...
 }
 ```
 
@@ -45,17 +51,17 @@ function example() {
 作者：程序员a
 */
 .example {
-  font-size: 10px;
-  display: flex;
+    font-size: 10px;
+    display: flex;
 }
 ```
 
 ```html
 <!-- 顶部栏 -->
 <div class="top-bar">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
 </div>
 ```
 
