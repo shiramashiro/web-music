@@ -1,0 +1,38 @@
+#app {
+    padding: 5px 5px;
+}
+
+.music-item {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.music-item .surface {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.music-item #play-btn,
+.music-item #more-action {
+    width: 20px;
+    height: 20px;
+}
+
+.music-item .middle {
+    font-size: 16px;
+    margin: 0 10px;
+    width: 225px;
+}
+
+.music-item .middle .album {
+    font-size: 12px;
+    color: #a4a4a4;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
