@@ -76,6 +76,10 @@
 
 .song-list .song-item .desc {
     font-size: 0.1rem;
+    width: 25vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menus {

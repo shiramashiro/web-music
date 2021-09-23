@@ -36,3 +36,17 @@ function start() {
 }
 
 start()
+
+function createDOM() {
+    for (let i = 0; i < songs.length; i++) {
+        let dom = document.createElement('div')
+        dom.setAttribute('class', 'song-item')
+        dom.innerHTML = `
+            <img src="${songs[i].surface}"/>
+            <div class="desc">${songs[i].desc}</div>
+        `
+        songsList.appendChild(dom)
+    }
+}
+
+createDOM()

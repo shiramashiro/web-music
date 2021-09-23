@@ -15,7 +15,7 @@
                 <input placeholder="HOYO-Mix" />
                 <img class="judge-music" src="../static/img/common/judge-music.png" />
             </div>
-            <div class="slideshow flex" style="position: relative;">
+            <div class="slideshow flex" style="position: relative">
                 <img
                     class="slideshow-item"
                     style="display: none"
@@ -37,28 +37,7 @@
                     <div class="text">推荐歌单</div>
                     <div class="more">更多 ></div>
                 </div>
-                <div class="song-list flex">
-                    <div class="song-item">
-                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
-                        <div class="desc">xxxxxxxxxx</div>
-                    </div>
-                    <div class="song-item">
-                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
-                        <div class="desc">xxxxxxxxxx</div>
-                    </div>
-                    <div class="song-item">
-                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
-                        <div class="desc">xxxxxxxxxx</div>
-                    </div>
-                    <div class="song-item">
-                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
-                        <div class="desc">xxxxxxxxxx</div>
-                    </div>
-                    <div class="song-item">
-                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
-                        <div class="desc">xxxxxxxxxx</div>
-                    </div>
-                </div>
+                <div class="song-list flex" id="songs"></div>
             </div>
             <div class="menus card">
                 <div class="header flex space-between">
@@ -119,6 +98,7 @@
             ></audio>
         </div>
         <script src="./js/data/musics.js"></script>
+        <script src="./js/data/songs.js"></script>
         <script src="./js/library/lib.dom.js"></script>
         <script src="./js/class/player.js"></script>
         <script src="./js/normal/index/lib.dom.js"></script>
