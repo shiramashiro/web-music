@@ -5,8 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>首页</title>
+        <link href="./css/common.css" type="text/css" rel="stylesheet" />
+        <link href="./css/normal/index/index.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <div class="top-bar flex space-between">
+                <img class="menu" src="../static/img/common/more.png" />
+                <input placeholder="HOYO-Mix" />
+                <img class="judge-music" src="../static/img/common/judge-music.png" />
+            </div>
+            <div class="slideshow">
+                <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+            </div>
+            <div class="recommendation card">
+                <div class="header flex space-between">
+                    <div class="text">推荐歌单</div>
+                    <div class="more">更多 ></div>
+                </div>
+                <div class="song-list flex">
+                    <div class="song-item">
+                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+                        <div class="desc">xxxxxxxxxx</div>
+                    </div>
+                    <div class="song-item">
+                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+                        <div class="desc">xxxxxxxxxx</div>
+                    </div>
+                    <div class="song-item">
+                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+                        <div class="desc">xxxxxxxxxx</div>
+                    </div>
+                    <div class="song-item">
+                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+                        <div class="desc">xxxxxxxxxx</div>
+                    </div>
+                    <div class="song-item">
+                        <img src="http://p1.music.126.net/LooRQwOrGF5k6FTnCkB8Lw==/109951166446132301.jpg?imageView&blur=40x20" />
+                        <div class="desc">xxxxxxxxxx</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menus card">
+                <div class="flex space-between">
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>排行</div>
+                    </div>
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>歌单</div>
+                    </div>
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>直播</div>
+                    </div>
+                </div>
+                <div class="flex space-between">
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>每日</div>
+                    </div>
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>喜欢</div>
+                    </div>
+                    <div>
+                        <img src="../static/img/common/diamond.png" alt="" />
+                        <div>专辑</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/data/musics.js"></script>
+        <script src="./js/library/lib.dom.js"></script>
+        <script src="./js/class/player.js"></script>
+        <script src="./js/normal/index/lib.dom.js"></script>
+        <script src="./js/normal/index/index.js"></script>
     </body>
 </html>

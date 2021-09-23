@@ -1,0 +1,96 @@
+#app {
+    padding: 2vw 2vw;
+}
+
+.top-bar .judge-music {
+    width: 8vw;
+    height: 3vh;
+}
+
+.top-bar .menu {
+    margin: 1vh 0;
+    width: 7vw;
+    height: 4vh;
+}
+
+.top-bar input {
+    width: 70vw;
+    border: 0;
+    border-radius: 5vw;
+    padding: 1vh 3vw;
+    outline: none;
+    position: relative;
+}
+
+.slideshow {
+    margin-top: 3vh;
+    width: 100%;
+    height: 22vh;
+    margin-bottom: 2vh;
+}
+
+.slideshow img {
+    border-radius: 3vw;
+    width: 100%;
+    height: 100%;
+}
+
+.recommendation {
+    width: 100%;
+}
+
+.card {
+    padding: 3vw;
+    background-color: white;
+    border-radius: 5vw;
+}
+
+.recommendation .header {
+    margin-bottom: 1vh;
+}
+
+.recommendation .header .text {
+    font-weight: bold;
+    font-size: 0.2rem;
+}
+
+.recommendation .header .more {
+    font-size: 0.1rem;
+    padding: 0.3vh 2vw;
+    border-radius: 10vw;
+    background-color: white;
+    border: 1px solid #cccc;
+}
+
+.song-list {
+    overflow: scroll;
+}
+
+.song-list .song-item {
+    margin: 0 3vw;
+}
+
+.song-list .song-item img {
+    width: 26vw;
+    border-radius: 5px;
+    height: 15vh;
+    object-fit: cover;
+}
+
+.song-list .song-item .desc {
+    font-size: 0.1rem;
+}
+
+.menus {
+    font-size: 0.1rem;
+    margin-top: 3vh;
+}
+
+.menus img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.menus > div {
+    text-align: center;
+}
