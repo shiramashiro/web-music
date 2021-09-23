@@ -10,14 +10,37 @@
     </head>
     <body>
         <div id="app">
-            <div class="top-bar">
-                sss
-            </div>
+            <div class="top-bar">sss</div>
             <!-- 音乐列表 -->
             <div id="music-list"></div>
+            <!-- mini播放器 -->
+            <div id="player" class="flex space-around">
+                <img id="player-surface" />
+                <div class="middle">
+                    <div id="player-title"></div>
+                    <div id="player-album"></div>
+                </div>
+                <div class="controller flex flex-center">
+                    <div class="box flex flex-center">
+                        <img id="player-last" src="../../static/img/common/player-last.png" />
+                        <img
+                            id="player-play"
+                            src="https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/stopped(3).png"
+                        />
+                        <img id="player-next" src="../../static/img/common/player-next.png" />
+                    </div>
+                    <img id="player-list" src="../../static/img/common/music-list(1).png" />
+                </div>
+            </div>
+            <audio
+                id="audio"
+                src="https://generic-data.oss-cn-chengdu.aliyuncs.com/img/training/music/item03/HOYO-MiX%20-%20Splashing%20Star.mp3"
+            ></audio>
         </div>
         <script src="../js/data/musics.js"></script>
-        <script src="../js/normal/play-list/lib.js"></script>
+        <script src="../js/library/lib.dom.js"></script>
+        <script src="../js/class/player.js"></script>
+        <script src="../js/normal/play-list/lib.dom.js"></script>
         <script src="../js/normal/play-list/index.js"></script>
     </body>
 </html>

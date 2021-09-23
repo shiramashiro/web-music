@@ -17,8 +17,8 @@
     border-radius: 5px;
 }
 
-.music-item #play-btn,
-.music-item #more-action {
+.music-item .play-btn,
+.music-item .more-action {
     width: 20px;
     height: 20px;
 }

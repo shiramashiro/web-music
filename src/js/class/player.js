@@ -21,6 +21,14 @@ class Player {
         this.node = node
     }
 
+    set setIndex(_index) {
+        this.index = _index
+    }
+
+    get getIndex() {
+        return this.index
+    }
+
     /**
      * 切换上一首歌
      *
@@ -29,6 +37,7 @@ class Player {
     last(callback) {
         this.index--
         if (this.index < 0) this.index = this.array.length - 1
+        this.node.src = this.array[this.index].src
         callback({ index: this.index, data: this.array[this.index] })
     }
 
@@ -40,6 +49,7 @@ class Player {
     next(callback) {
         this.index++
         if (this.index > this.array.length - 1) this.index = 0
+        this.node.src = this.array[this.index].src
         callback({ index: this.index, data: this.array[this.index] })
     }
 
@@ -52,11 +62,10 @@ class Player {
         if (this.flag) {
             this.node.pause()
             this.flag = false
-            callback({ flag: this.flag })
         } else {
             this.node.play()
             this.flag = true
-            callback({ flag: this.flag })
         }
+        callback({ flag: this.flag })
     }
 }
