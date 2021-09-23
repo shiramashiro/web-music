@@ -6,8 +6,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>个人中心</title>
         <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/normal/center/index.css" />
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <!-- 顶部 -->
+            <!-- 个人信息-->
+            <div class="head-img flex card">
+                <img id="img" src="../../static/img/common/头像.jpeg" />
+                <div class="wrap">
+                    <div class="self-info flex">
+                        <div>shiramashiro</div>
+                        <img style="width: 20px; height: 20px" src="../../static/img/common/diamond.png" />
+                    </div>
+                    <img src="../../static/img/common/VIP.png" />
+                </div>
+            </div>
+            <!-- 签名 -->
+            <div class="autograph">个性签名：Talk is cheap.Show me the code.</div>
+            <!-- 分区-->
+            <div class="menu">
+                <div id="area1" class="flex space-around area"></div>
+                <div id="area2" class="flex space-around area"></div>
+            </div>
+            <!-- 最近播放-->
+            <div class="saikinn">
+                最近播放
+                <div class="flex space-around songSheet">
+                    <div>
+                        <img src="../../static/img/common/歌单1.webp" />
+                        <div>水中幻愿</div>
+                    </div>
+                    <div>
+                        <img src="../../static/img/common/歌单2.webp" />
+                        <div>风色之诗</div>
+                    </div>
+                    <div>
+                        <img src="../../static/img/common/歌单3.webp" />
+                        <div>岩之战歌</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 歌单 -->
+            <div class="flex space-around userSongSheet">
+                <span>自建歌单</span>
+                <br />
+                <div>
+                    <button><img src="../../static/img/common/歌单self1.webp" /></button>
+                </div>
+                <div>
+                    <button><img src="../../static/img/common/歌单self2.webp" /></button>
+                </div>
+                <div>
+                    <button><img src="../../static/img/common/歌单self3.webp" /></button>
+                </div>
+                <div>
+                    <button><img src="../../static/img/common/歌单self5.webp" /></button>
+                </div>
+            </div>
+        </div>
+        <script src="../js/normal/center/center.js"></script>
     </body>
 </html>

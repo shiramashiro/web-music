@@ -1,0 +1,77 @@
+#app {
+    padding: 5px;
+}
+
+.card {
+    padding: 2vw;
+    margin: 0 0 3vh 0;
+    background-color: white;
+    border-radius: 3vw;
+}
+
+.head-img {
+    border-left: 30px;
+    width: 100%;
+}
+
+.head-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.self-info {
+    font-size: 14px;
+    transform: translate(0, 100%);
+}
+/* 个性签名 */
+.autograph {
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0.5px 5px 1px rgb(69, 100, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* 分区 */
+.area img {
+    width: 20px;
+    height: 20px;
+}
+.area button {
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(236, 195, 57);
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.224);
+}
+.saikinn {
+    font-size: 10px;
+}
+.songSheet {
+    background-color: rgb(248, 235, 215);
+    font-weight: bold;
+}
+.songSheet img {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+}
+.userSongSheet {
+    font-size: 10px;
+    margin-top: 10px;
+}
+.userSongSheet img {
+    width: 60px;
+    height: 100px;
+    border-radius: 20px 20px 20px 20px;
+}
