@@ -42,11 +42,11 @@
 }
 
 .player-row-1 .col-2 #title {
-    font-size: 16px;
+    font-size: 0.25rem;
 }
 
 .player-row-1 .col-2 #album {
-    font-size: 12px;
+    font-size: 0.1rem;
 }
 
 .player-row-2 {
@@ -58,7 +58,7 @@
 /* 歌词 */
 .player-row-3 {
     height: 100px;
-    font-size: 4vw;
+    font-size: .2rem;
     overflow: hidden;
     margin-top: 2.5vw;
     line-height: 30px;
@@ -89,7 +89,7 @@
 /* 开始时间和结束时间 */
 .player-row-4 .row-2 #start-time,
 .player-row-4 .row-2 #end-time {
-    font-size: 1vw;
+    font-size: 0.1rem;
 }
 
 .player-row-4 .row-2 #start-time {

@@ -95,6 +95,7 @@ controlBtn.addEventListener('click', () => {
 
 nextBtn.addEventListener('click', () => {
     player.next((data) => {
+        loadResource(data.index)
         clearResource()
         setTimeout(() => {
             endTime.innerText = formatTime(audio.duration)
@@ -104,6 +105,7 @@ nextBtn.addEventListener('click', () => {
 
 lastBtn.addEventListener('click', () => {
     player.last((data) => {
+        loadResource(data.index)
         clearResource()
         setTimeout(() => {
             endTime.innerText = formatTime(audio.duration)
@@ -119,6 +121,7 @@ audio.addEventListener('timeupdate', () => {
 })
 
 audio.addEventListener('ended', () => {
+    loadResource(data.index)
     clearResource()
     changeIcon(false)
 })
