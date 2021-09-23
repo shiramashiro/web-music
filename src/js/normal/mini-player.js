@@ -4,6 +4,9 @@ playerSurface.src = player.array[0].surface
 playerTitle.innerText = player.array[0].title
 playerAlbum.innerText = player.array[0].album
 
+/**
+ * mini播放器点击播放暂停时
+ */
 playerPlay.addEventListener('click', () => {
     player.control((data) => {
         if (data.flag) {
@@ -14,6 +17,9 @@ playerPlay.addEventListener('click', () => {
     })
 })
 
+/**
+ * mini播放器点击下一首时
+ */
 playerLast.addEventListener('click', () => {
     player.next((data) => {
         playerSurface.src = data.data.surface
@@ -23,6 +29,9 @@ playerLast.addEventListener('click', () => {
     })
 })
 
+/**
+ * mini播放器点击上一首时
+ */
 playerNext.addEventListener('click', () => {
     player.last((data) => {
         playerSurface.src = data.data.surface
@@ -32,6 +41,9 @@ playerNext.addEventListener('click', () => {
     })
 })
 
+/**
+ * mini播放器音乐停止时
+ */
 audio.addEventListener('ended', () => {
     player.next((data) => {
         playerSurface.src = data.data.surface
