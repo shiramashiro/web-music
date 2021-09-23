@@ -42,16 +42,16 @@
     border-radius: 5vw;
 }
 
-.recommendation .header {
+.header {
     margin-bottom: 1vh;
 }
 
-.recommendation .header .text {
+.header .text {
     font-weight: bold;
     font-size: 0.2rem;
 }
 
-.recommendation .header .more {
+.header .more {
     font-size: 0.1rem;
     padding: 0.3vh 2vw;
     border-radius: 10vw;
@@ -88,6 +88,53 @@
     height: 15vw;
 }
 
-.menus > div {
+.menus .wrap {
     text-align: center;
+    margin: 2vh 0;
+}
+
+.slideshow img {
+    position: absolute;
+}
+
+/* 滑动时的动画 */
+.sliding-from-current-to-left {
+    display: block !important;
+    animation-name: slide-slideshow-from-current-to-left;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-slideshow-from-current-to-left {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-120%, 0);
+    }
+}
+
+.sliding-from-right-to-current {
+    z-index: 998;
+    display: block !important;
+    animation-name: slide-slideshow-from-right-to-current;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-slideshow-from-right-to-current {
+    0% {
+        transform: translate(120%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.show-slideshow {
+    display: block !important;
 }
