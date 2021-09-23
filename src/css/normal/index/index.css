@@ -112,11 +112,11 @@
 
 @keyframes slide-slideshow-from-current-to-left {
     0% {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
-        transform: translate(-120%, 0);
+        transform: translate3d(-120%, 0, 0);
     }
 }
 
@@ -131,11 +131,11 @@
 
 @keyframes slide-slideshow-from-right-to-current {
     0% {
-        transform: translate(120%, 0);
+        transform: translate3d(120%, 0, 0);
     }
 
     100% {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 

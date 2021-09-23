@@ -21,14 +21,6 @@ class Player {
         this.node = node
     }
 
-    set setIndex(_index) {
-        this.index = _index
-    }
-
-    get getIndex() {
-        return this.index
-    }
-
     /**
      * 切换上一首歌
      *
