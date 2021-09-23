@@ -1,5 +1,6 @@
 #app {
     padding: 2vw 2vw;
+    min-height: calc(100vh) !important;
 }
 
 .top-bar .judge-music {
@@ -33,10 +34,6 @@
     border-radius: 3vw;
     width: 100%;
     height: 100%;
-}
-
-.recommendation {
-    width: 100%;
 }
 
 .card {
@@ -83,7 +80,7 @@
 
 .menus {
     font-size: 0.1rem;
-    margin-top: 3vh;
+    margin: 3vh 0 20vh 0;
 }
 
 .menus img {
